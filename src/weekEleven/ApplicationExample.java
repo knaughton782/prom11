@@ -8,7 +8,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Scanner;
 
-public class Application {
+public class ApplicationExample {
 
 	public static void main(String[] args) {
 		String connectionString = "jdbc:mysql://localhost:3306/employees";
