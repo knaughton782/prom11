@@ -1,9 +1,9 @@
-create database if not exists teams;
+create database if not exists school;
 
-use teams;
+use school;
 
-drop table if exists members;
-drop table if exists teams;
+drop table if exists grades;
+drop table if exists grades;
 
 create table teams (
   id int(10) not null auto_increment,

@@ -22,7 +22,7 @@ public class ApplicationExample {
 		//creating a connection can throw a sql exception so we create a try block
 		
 		try {
-			Connection conn = DriverManager.getConnection(connectionString, "root", "iamawesome");
+			Connection conn = DriverManager.getConnection(connectionString, "user1", "password1");
 			System.out.println("Connected to Database");
 			System.out.print("Enter employee number: ");
 			
