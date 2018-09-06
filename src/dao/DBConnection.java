@@ -22,8 +22,8 @@ public class DBConnection {
 			//if its null, it creates the connection
 			try {
 				connection = DriverManager.getConnection(URL, USERNAME, PASSWORD);
-				instance = new DBConnection(connection);
-				System.out.println("Connection Successful");
+				instance = new DBConnection(connection); //call constructor
+				System.out.println("Connected to DB successfully!");
 			} catch (SQLException e) {
 				e.printStackTrace();
 			}
