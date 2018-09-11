@@ -13,7 +13,7 @@ public class BookDao {
 	
 	private Connection connection;
 	private final String GET_BOOKS_QUERY = "SELECT * FROM books";
-	private final String GET_BOOK_BY_ID_QUERY = "SELECT * FROM books WHERE ID = ?";
+	private final String GET_BOOK_BY_ID_QUERY = "SELECT * FROM books WHERE id = ?";
 	
 	public BookDao() {
 		connection = DBConnection.getConnection();
@@ -22,6 +22,10 @@ public class BookDao {
 	public List<Books> getBooks() throws SQLException {
 		ResultSet rs = connection.prepareStatement(GET_BOOKS_QUERY).executeQuery();
 		List<Books> books = new ArrayList<Books>();
+		
+//		while (rs.next()) {
+//			books.add(e)
+//		}
 		return books;
 	}
 	
